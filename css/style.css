@@ -55,6 +55,7 @@ header nav ul {
   outline: none;
   overflow-y: hidden;
   padding: 0.8rem;
+  border-top: 10px solid var(--color-primary);
 }
 
 header nav ul li {
@@ -192,11 +193,13 @@ footer address {
   text-align: justify;
 }
 footer a {
-word-wrap: break-word;}
+  word-wrap: break-word;
+}
 footer > p {
+  font-size: 2em;
   background-color: var(--color-background-dark);
   color: var(--color-primary);
-  padding: 0.4em 0.4em  4em;
+  padding: 0.4em 0.4em 7.5em;
   text-align: center;
 }
 
