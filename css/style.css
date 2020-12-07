@@ -1,0 +1,206 @@
+:root {
+  --color-background-dark: #2c3e50;
+  --color-background-dark-transparent: #2c3e5093;
+  --color-background-light: #ecf0f1;
+  --color-background-light-transparent: #ecf0f148;
+  --color-primary: #f39c12;
+  --color-secondary: #c0392b;
+  --color-white: #ecf0f1;
+  --color-black: #2c3e50;
+}
+
+section {
+  background-color: var(--color-background-light);
+  border-bottom: var(--color-primary) 8px solid;
+}
+h2 {
+  font-size: 5.2em;
+  color: var(--color-black);
+  padding: 1em;
+  text-align: center;
+}
+
+/* Header */
+header {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-background-dark);
+  color: var(--color-primary);
+}
+header figure {
+  padding: 4em 4em 0;
+}
+header img {
+  display: block;
+  width: 20em;
+  margin: 0 auto;
+}
+header h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 4.8em;
+  text-align: center;
+  padding-bottom: 0.4em;
+}
+
+header nav {
+  background-color: var(--color-background-dark);
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+header nav ul {
+  width: 100%;
+  display: flex;
+  outline: none;
+  overflow-y: hidden;
+  padding: 0.8rem;
+}
+
+header nav ul li {
+  width: 100%;
+  padding: 0 4em 1em;
+  text-align: center;
+  margin: auto;
+  font-weight: 500;
+}
+
+header nav a {
+  width: 100%;
+  margin: auto;
+  font-size: 3em;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+/* Actualité */
+#news ul {
+  padding: 0 4em 4em;
+}
+#news article h3 {
+  font-size: 5.2em;
+  margin-bottom: 0.2em;
+  color: var(--color-secondary);
+  text-align: center;
+}
+#news article h4 {
+  margin-bottom: 0.2em;
+  font-size: 2em;
+  color: var(--color-primary);
+}
+#news article figure figcaption {
+  font-size: 2em;
+  font-weight: 100;
+  padding: 0.8em;
+  color: var(--color-black);
+  text-align: center;
+}
+#news article p {
+  font-size: 4em;
+  margin-bottom: 2em;
+  color: var(--color-black);
+  text-align: justify;
+}
+#news img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Les Films*/
+#movies img {
+  max-width: 100%;
+}
+#movies > ul > li > figure figcaption {
+  padding: 2em;
+}
+#movies ul li figure figcaption ul li:nth-child(1) {
+  font-size: 4em;
+  font-weight: bolder;
+}
+#movies ul li figure figcaption ul li:nth-child(2),
+#movies ul li figure figcaption ul li:nth-child(3),
+#movies ul li figure figcaption ul li:nth-child(4) {
+  font-size: 2em;
+}
+#movies ul li figure figcaption ul li:nth-child(3) {
+  color: var(--color-secondary);
+}
+#movies ul li figure figcaption ul li:nth-child(3)::before {
+  color: var(--color-background-dark);
+  content: "De ";
+}
+#movies ul li figure figcaption ul li:nth-child(4) {
+  color: var(--color-primary);
+}
+#movies ul li figure figcaption ul li:nth-child(4)::before {
+  color: var(--color-background-dark);
+  content: "Avec ";
+}
+
+/* Pré-inscription */
+#sign {
+  background-color: var(--color-background-dark);
+}
+#sign h2 {
+  color: var(--color-white);
+}
+#sign form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4em 4em;
+  padding: 4em;
+  background-color: var(--color-background-light-transparent);
+  border: var(--color-primary) 8px solid;
+  border-radius: 2em;
+}
+#sign form p {
+  font-size: 4.4em;
+  margin-bottom: 0.8em;
+}
+#sign form label {
+  font-size: 4em;
+  margin-bottom: 0.2em;
+}
+#sign form input {
+  font-size: 4em;
+  padding: 0.2em;
+  margin-bottom: 0.4em;
+}
+#sign form input:last-child {
+  margin-top: 1em;
+  background-color: var(--color-background-dark);
+  color: var(--color-primary);
+  border: solid 8px var(--color-primary);
+}
+/* Footer */
+footer section {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 4em 8em;
+}
+footer h3 {
+  font-size: 5.2em;
+}
+footer h4 {
+  font-size: 3.6em;
+}
+footer p,
+footer a,
+footer address {
+  font-size: 3.2em;
+  text-align: justify;
+}
+footer a {
+word-wrap: break-word;}
+footer > p {
+  background-color: var(--color-background-dark);
+  color: var(--color-primary);
+  padding: 0.4em 0.4em  4em;
+  text-align: center;
+}
+
+footer section:first-child h4 {
+  font-family: "Pacifico", cursive;
+  margin-bottom: 0.4em;
+}
