@@ -154,10 +154,12 @@ header nav a {
   background-color: var(--color-background-light-transparent);
   border: var(--color-primary) 0.4rem solid;
   border-radius: 2rem;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 #sign form p {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
+  text-align: center;
 }
 #sign form label {
   font-size: 2rem;
@@ -167,12 +169,14 @@ header nav a {
   font-size: 2rem;
   padding: 0.8rem;
   margin-bottom: 0.4rem;
+  border-radius: 1rem;
 }
 #sign form input:last-child {
   margin-top: 8rem;
   background-color: var(--color-background-dark);
   color: var(--color-primary);
   border: solid 0.4rem var(--color-primary);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 /* Footer */
 footer section {
@@ -246,6 +250,12 @@ footer section:first-child h4 {
     margin-right: 2rem;
     padding: 1rem;
     background-color: var(--color-white);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  #news ul li figure:hover {
+    transform: scale(1.02);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
   #news ul li figure figcaption {
     padding-top: 2rem;
@@ -274,7 +284,7 @@ footer section:first-child h4 {
 
   /* Les Films */
   #movies {
-    padding: 2rem ;
+    padding: 2rem;
   }
   #movies > div {
     display: flex;
@@ -287,6 +297,7 @@ footer section:first-child h4 {
   }
   #movies ul li figure {
     margin: 2rem 2rem 4rem;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
   }
   #movies ul li figure figcaption {
     padding: 1.4rem;
@@ -297,11 +308,16 @@ footer section:first-child h4 {
     display: flex;
     flex-direction: column;
   }
-  #movies>div i{
+  #movies > div i {
     margin: auto 0;
     font-size: 6rem;
     color: var(--color-white);
-
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    border-radius: 10rem;
+    transition: all 0.4s;
+  }
+  #movies > div i:hover {
+    transform: scale(1.1);
   }
   #movies > div:last-child {
     justify-content: center;
@@ -315,11 +331,59 @@ footer section:first-child h4 {
     margin: 0 1rem;
     background-color: var(--color-white);
   }
+  #movies > div:last-child div:nth-child(2){
+    background-color: var(--color-primary);
+  }
 
   /* Pré-inscription */
-#sign form input:last-child{
-  display: inline-block;
-  max-width: 100%;
-}
+  #sign form {
+    max-width: 60%;
+    margin: 2rem auto 4rem;
+    padding: 4rem 8rem;
+  }
+  #sign form p {
+    text-align: center;
+    font-size: 4rem;
+  }
+  #sign form input:last-child {
+    cursor: pointer;
+    display: inline-block;
+    width: 50%;
+    margin: 4rem auto 0;
+    transition: all 0.3s;
+  }
+  #sign form input:last-child:hover {
+    transform: scale(1.04);
+  }
+  /* Footer */
+  footer {
+    background-color: var(--color-primary);
+  }
+  footer > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  footer section {
+    padding: 4rem;
+  }
+  footer section h3 {
+    font-size: 3rem;
+  }
+  footer section:nth-child(1) {
+    max-width: 50%;
+  }
+  footer section:nth-child(2) h4 {
+    padding: 3rem 0 0.4rem;
+  }
 
+  footer > p {
+    padding: 1.4rem;
+  }
+
+  /* Annim*/
+
+  header nav a:hover {
+    font-weight: bolder;
+  }
 }
