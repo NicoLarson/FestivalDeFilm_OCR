@@ -331,7 +331,7 @@ footer section:first-child h4 {
     margin: 0 1rem;
     background-color: var(--color-white);
   }
-  #movies > div:last-child div:nth-child(2){
+  #movies > div:last-child div:nth-child(2) {
     background-color: var(--color-primary);
   }
 
@@ -380,7 +380,18 @@ footer section:first-child h4 {
   footer > p {
     padding: 1.4rem;
   }
+  footer #goUp {
+    top: none;
+  }
 
+  footer #goUp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    font-size: 4rem;
+    color: var(--color-white);
+  }
   /* Annim*/
 
   header nav a:hover {
