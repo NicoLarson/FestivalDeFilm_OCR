@@ -289,7 +289,7 @@ footer #goUp {
     flex-direction: row-reverse;
   }
   #news ul li:nth-child(2n) article figure {
-    margin: 0 0 0 2rem;
+    margin: auto 0 auto 2rem;
   }
 
   /* Les Films */
