@@ -73,7 +73,11 @@ header nav a {
   text-align: center;
   color: var(--color-primary);
 }
-
+/* Présentation */
+main > section:first-child p {
+  padding: 0 2rem 2rem;
+  text-align: justify;
+}
 /* Actualité */
 #news ul {
   padding: 0 2rem 4rem;
@@ -248,6 +252,10 @@ footer #goUp {
   h2 {
     font-size: 4rem;
     color: var(--color-primary);
+  }
+  /* Présentation */
+  main > section:first-child p {
+  color: var(--color-background-light);
   }
   /* Actualité*/
   #news ul li {
