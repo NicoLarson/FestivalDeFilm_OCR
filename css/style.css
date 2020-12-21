@@ -109,6 +109,9 @@ header nav a {
 }
 
 /* Les Films*/
+#movies div ul:last-child > li:last-child {
+  padding-bottom: 4rem;
+}
 #movies img {
   max-width: 100%;
 }
@@ -137,6 +140,10 @@ header nav a {
 #movies ul li figure figcaption ul li:nth-child(4)::before {
   color: var(--color-background-dark);
   content: "Avec ";
+}
+#movies .fa-arrow-circle-left,
+#movies .fa-arrow-circle-right {
+  display: none;
 }
 
 /* Pré-inscription */
@@ -215,6 +222,9 @@ footer section:first-child h4 {
   font-family: "Pacifico", cursive;
   margin-bottom: 0.4rem;
 }
+footer #goUp {
+  display: none;
+}
 
 @media screen and (min-width: 700px) {
   header img {
@@ -247,7 +257,7 @@ footer section:first-child h4 {
   #news ul li figure {
     width: 200rem;
     height: 100%;
-    margin-right: 2rem;
+    margin: auto 2rem auto 0;
     padding: 1rem;
     background-color: var(--color-white);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -308,6 +318,10 @@ footer section:first-child h4 {
     display: flex;
     flex-direction: column;
   }
+  #movies .fa-arrow-circle-left,
+  #movies .fa-arrow-circle-right {
+    display: block;
+  }
   #movies > div i {
     margin: auto 0;
     font-size: 6rem;
@@ -321,7 +335,7 @@ footer section:first-child h4 {
   }
   #movies > div:last-child {
     justify-content: center;
-    width: 100rem;
+    max-width: 100rem;
     margin: 0 auto 2rem;
   }
   #movies > div:last-child div {
@@ -337,7 +351,7 @@ footer section:first-child h4 {
 
   /* Pré-inscription */
   #sign form {
-    max-width: 60%;
+    max-width: 80rem;
     margin: 2rem auto 4rem;
     padding: 4rem 8rem;
   }
@@ -362,29 +376,22 @@ footer section:first-child h4 {
   footer > div {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
-  footer section {
+  footer div section {
+    max-width: 60rem;
     padding: 4rem;
   }
   footer section h3 {
     font-size: 3rem;
   }
-  footer section:nth-child(1) {
-    max-width: 50%;
-  }
-  footer section:nth-child(2) h4 {
-    padding: 3rem 0 0.4rem;
-  }
-
   footer > p {
     padding: 1.4rem;
   }
-  footer #goUp {
-    top: none;
-  }
 
   footer #goUp {
+    display: block;
     position: fixed;
     bottom: 0;
     right: 0;
