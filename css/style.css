@@ -78,6 +78,7 @@ main > section:first-child p {
   padding: 0 2rem 2rem;
   text-align: justify;
   color: var(--color-black);
+  font-size: 2rem;
 }
 /* Actualité */
 #news ul {
